@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Cursos</title>
+</head>
+
+<body>
+    <h1 class="header__titulo">Micromundo terrarios</h1>
+    <header class="header">
+        <img class="header__img" src="../imagenes/logoblanco.png" alt="Logo de Micromundo">
+
+
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__item" href="../index.html">Inicio</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__item" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__item" href="../pages/mantenimiento.html">Mantenimiento</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__item" href="../pages/puntosventa.html">Puntos de venta</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__item" href="../pages/eduacion.html">Educación y Tips</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+        <section class="portada">
+            <div class="portada__contenedor">
+                <img class="portada__logo--pag" src="../imagenes/isocolor.png" alt="Logo Micromundo centrado y grande">
+                <h2 class="portada__titulo--pag">Cursos</h2>
+            </div>
+        </section>
+        <section class="productoscontenedor">
+            <div class="card">
+                <h2 class="card__titulo"><strong>Técnica Tiffany</strong></h2>
+                <img class="card__img" src="../imagenes/seccion productos/caricatura-tiffany.jpg"
+                    alt="Caricatura de soldar">
+                <p class="card__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla facere sint sit,
+                    vitae at aliquam
+                    nesciunt
+                    iste quo nobis suscipit ad dolores soluta, explicabo enim nemo, possimus ipsum ratione natus?</p>
+            </div>
+
+            <div class="card">
+                <h2 class="card__titulo"><strong>Armado de terrarios con plantas</strong></h2>
+                <img class="card__img" src="../imagenes/seccion productos/caricatura-plantas.jpg"
+                    alt="Caricatura con plantas">
+                <p class="card__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem incidunt
+                    unde consectetur
+                    repellat
+                    eaque! Consectetur, repellendus. Dignissimos vel facere voluptatem temporibus obcaecati, quod fugiat
+                    omnis
+                    itaque. Sapiente laudantium officiis perferendis!</p>
+            </div>
+        </section>
+
+
+        <h2 class="form__titulo">Formulario de contacto</h2>
+        <form class="form">
+            <div class="formcaja">
+                <label for="nombre-usuario">Nombre y apellido:</label>
+                <input type=" text" name="nombreyapellido" id="nombre-usuario" placeholder="Ej: pepito pérez" required>
+            </div>
+
+            <div class="formcaja">
+                <span>Género:</span>
+                <label for="">Mujer</label>
+                <input type="radio" name="Género" value="mujer">
+
+                <label for="">Hombre</label>
+                <input type="radio" name="genero" value="hombre">
+
+                <label for="">No contesta</label>
+                <input type="radio" name="genero" value="no-contesta">
+            </div>
+
+            <div class="formcaja">
+                <label for="email">Email</label>
+                <input type="mail" name="email" id="email" required>
+            </div>
+
+            <div class="formcaja">
+                <label for="curso">Curso de interés</label>
+                <select name="curso" id="curso">
+                    <option value="tiffany">Técnica Tiffany</option>
+                    <option value="armadoplantas">Armado de plantas</option>
+                </select>
+            </div>
+
+            <div class="formcaja">
+                <label for="mensaje">Mensaje</label>
+                <textarea name=" mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div class="formcaja">
+                <label for="notificaciones">¿Deseas recibir notificaciones de próximas fechas de cursos?</label>
+                <input type="checkbox" name="notificaciones" value="notificaciones" id="notificaciones">
+            </div>
+
+            <div class="formcaja">
+                <input type="submit" value="Enviar">  
+            </div>
+        </form>
+    </main>
+
+    <footer class="footercontenedor">
+        <div class="redes__icons">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+
+        <div>
+            <img class="footer__logo" src="../imagenes/logoblanco.png" alt="Logo Micromundo">
+        </div>
+
+        <div>
+            <span class="footer__texto">Decoración y reflexión...</span>
+        </div>
+
+    </footer>
+</body>
+
+</html>

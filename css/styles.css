@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---Header---*/
+
+.header {
+    background-color: rgb(0, 80, 35);
+    background-image: linear-gradient(green yellow);
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    position: sticky
+}
+
+.header__titulo {
+    position: absolute;
+    z-index: -1;
+}
+
+.header__img {
+    width: 180px;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    text-align: center;
+    font-size: 0;
+
+}
+
+.navbar__item {
+    color: white;
+    font-size: 100%;
+    justify-content:center;
+    /* display: inline-block; */
+    position: relative;
+    font-size: 14px;
+
+}
+.ul__sub{
+position: absolute;
+display: none;
+
+border-radius: 10px;
+padding-top: 50px;
+
+}
+
+.li__sub{
+display: block;
+padding: 10px;
+background-color: rgba(248, 242, 242, 0.405);
+border: 1px black solid;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+/* ---Main--- */
+.portada__contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.portada {
+
+    background-image: url(../imagenes/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.portada__logo {
+    width: 350px;
+    justify-content: center;
+    margin-left: 50px;
+}
+.portada__logo:hover{
+    ;
+}
+.portada__logo--pag {
+    width: 350px;
+}
+
+.portada__titulo {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1, 3rem;
+}
+
+.portada__titulo--pag {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+
+/* ---container card--- */
+
+.container__titulo {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 80, 35);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    box-shadow: 10px 0px 10px;
+    width: 300px;
+    border-radius: 5%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+
+.card__img {
+    width: 100%;
+    height: 80%;
+}
+
+.card__titulo {
+    text-align: center;
+    background-color: rgba(0, 80, 35, 0.942);
+    font-weight: 900;
+}
+
+.card__texto {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* ---sección productos--- */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(25, 153, 25, 0.201);
+
+}
+
+.productostarjeta {
+    box-shadow: 1px 5px 3px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 25vw;
+    margin: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productos__img {
+    width: 100%;
+}
+
+.productos__titulo {
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0, 80, 9, 0.598);
+}
+
+.productos__boton {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.productos__boton--chico{
+    background-color: rgba(46, 139, 86, 0.432);
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 1.5px;
+    display: flex;
+    width: 70px;
+    align-self: center;
+    box-shadow: 5px 5px 10px;
+}
+
+.productostarjeta:hover{
+    transform: scale(1.05);
+
+}
+
+/* ---Medios de pago--- */
+.mediosdepago {
+    display: flex;
+    justify-content: center;
+}
+
+.mediosdepago__titulo {
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+
+}
+
+.pagostarjeta {
+    width: 300px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px;
+    display: flex;
+    margin: 20px;
+    
+}
+
+.pagostarjeta:hover{
+    transform: rotate(20deg);
+}
+.pagos__img {
+    width: 90px;
+    align-self: center;
+}
+
+.pagos__titulo {
+    text-align: center;
+}
+
+.pagos__texto {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ---sección noticias */
+.contenedor__titulo {
+    text-align: center;
+    background-color: rgb(0, 80, 35);
+    margin: 15px;
+    padding: 15px;
+    width: 100%;
+}
+
+.contenedornoticias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticiatarjeta {
+    border: 2px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia__img {
+    width: 100%;
+    height: 80%
+}
+
+.noticia__titulo {
+    text-align: center;
+}
+
+.noticia__boton {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---Footer--- */
+
+.footercontenedor {
+    background-color: rgba(0, 80, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    padding: 20px;
+}
+
+.redes__icons i{
+color: white;
+text-shadow: 5px 5px 15px black;
+font-size: 2rem;
+padding: 8px
+;
+}
+
+
+.footer__logo {
+    width: 200px;
+}
+
+.footer__texto {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-shadow: 5px 5px 15px black;
+}
+
+/* Página productos */
+
+.productoscontenedor {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Puntos de venta */
+.card__maps {
+    width: 100%;
+}
+
+/* ---Mantenimiento--- */
+
+.mantenimiento__texto {
+    border: 2px solid black;
+    width: 550px;
+    background-image: url(../imagenes/mantenimientofondo.jpg);
+    background-size: cover;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.texto__color {
+    background-color: rgba(0, 80, 35);
+}
+
+/* Cursos formulario */
+
+.form__titulo {
+    background-color: rgba(0, 80, 35);
+    padding-left: 10px;
+}
+
+.form {
+    border: 1px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/mantenimientofondo.jpg);
+    background-size: cover;
+}
+
+.formcaja {
+    margin: 7px;
+}
+
+/* Educación */
+.tarjvideos {
+    border: 2px solid green;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.tarjvideos__video {
+    width: ;
+}

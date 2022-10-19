@@ -209,6 +209,10 @@ a {
     margin: 20px;
 }
 
+.pagostarjeta:hover{
+transform: rotate(20deg);
+}
+
 .pagos__img {
     width: 90px;
     align-self: center;

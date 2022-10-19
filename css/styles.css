@@ -19,7 +19,6 @@ a {
 
 .header {
     background-color: rgb(0, 80, 35);
-    background-image: linear-gradient(green yellow);
     padding: 8px;
     display: flex;
     width: 100%;
@@ -46,37 +45,13 @@ a {
     justify-content: flex-end;
     gap: 20px;
     text-align: center;
-    font-size: 0;
 
 }
 
 .navbar__item {
     color: white;
     font-size: 100%;
-    justify-content:center;
-    /* display: inline-block; */
-    position: relative;
-    font-size: 14px;
-
-}
-.ul__sub{
-position: absolute;
-display: none;
-
-border-radius: 10px;
-padding-top: 50px;
-
-}
-
-.li__sub{
-display: block;
-padding: 10px;
-background-color: rgba(248, 242, 242, 0.405);
-border: 1px black solid;
-}
-
-ul li:hover ul{
-    display: block;
+    justify-content: flex-end;
 }
 
 /* ---Main--- */
@@ -103,9 +78,7 @@ ul li:hover ul{
     justify-content: center;
     margin-left: 50px;
 }
-.portada__logo:hover{
-    ;
-}
+
 .portada__logo--pag {
     width: 350px;
 }
@@ -140,7 +113,7 @@ ul li:hover ul{
 }
 
 .card {
-    box-shadow: 10px 0px 10px;
+    border: 2px solid black;
     width: 300px;
     border-radius: 5%;
     overflow: hidden;
@@ -169,14 +142,14 @@ ul li:hover ul{
 /* ---sección productos--- */
 .productos {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(25, 153, 25, 0.201);
 
 }
 
 .productostarjeta {
-    box-shadow: 1px 5px 3px;
+    border: 2px black solid;
     border-radius: 10px;
     overflow: hidden;
     width: 25vw;
@@ -184,7 +157,6 @@ ul li:hover ul{
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .productos__img {
@@ -206,21 +178,15 @@ ul li:hover ul{
 }
 
 .productos__boton--chico{
-    background-color: rgba(46, 139, 86, 0.432);
-    color: black;
-    font-weight: bold;
+    border: 2px solid black;
     border-radius: 4px;
     padding: 1.5px;
     display: flex;
+    color:rgba(0, 80, 35);
     width: 70px;
     align-self: center;
-    box-shadow: 5px 5px 10px;
 }
 
-.productostarjeta:hover{
-    transform: scale(1.05);
-
-}
 
 /* ---Medios de pago--- */
 .mediosdepago {
@@ -236,18 +202,13 @@ ul li:hover ul{
 }
 
 .pagostarjeta {
+    border: 2px solid black;
     width: 300px;
-    flex-direction: column;
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px;
     display: flex;
+    flex-direction: column;
     margin: 20px;
-    
 }
 
-.pagostarjeta:hover{
-    transform: rotate(20deg);
-}
 .pagos__img {
     width: 90px;
     align-self: center;
@@ -308,14 +269,32 @@ ul li:hover ul{
     padding: 20px;
 }
 
-.redes__icons i{
-color: white;
-text-shadow: 5px 5px 15px black;
-font-size: 2rem;
-padding: 8px
-;
+.footer__redes {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
 }
 
+.redes__tarjeta {
+    border: 1px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes__img {
+    width: 35px;
+    margin-right: 20px;
+
+}
+
+/* En esta parte quería que los iconos me lleven directamente a las redes, así que me inventé esto, seguramente existan otra forma adecuada, esta es la que mi imaginación logró jajaj  */
+.redes__link {
+    position: absolute;
+    color: white;
+    margin-left: 5px;
+    font-size: 2rem;
+}
 
 .footer__logo {
     width: 200px;
@@ -326,8 +305,7 @@ padding: 8px
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 800;
-    font-size: 1.2rem;
-    text-shadow: 5px 5px 15px black;
+    font-size: 1.1rem;
 }
 
 /* Página productos */

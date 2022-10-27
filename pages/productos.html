@@ -4,132 +4,385 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
-    <h1 class="header__titulo">Micromundo terrarios</h1>
-    <header class="header">
-        <img class="header__img" src="../imagenes/logoblanco.png" alt="Logo de Micromundo">
+    <h1 class="header__titulo">Micromundo terrarios. Terrarios abiertos. Suculentas. Decoración</h1>
 
+    <header class="navbar sticky-top navbar-expand-lg navbar-light bg-verde ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../imagenes/logoblanco.png" alt="" class="w-75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav class="navbar">
-            <ul class="navbar__list">
-                <li class="navbar__item">
-                    <a class="navbar__item" href="../index.html">Inicio</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__item" href="../pages/mantenimiento.html">Mantenimiento</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__item" href="../pages/puntosventa.html">Puntos de venta</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__item" href="../pages/cursos.html">Cursos</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__item" href="../pages/eduacion.html">Educación y Tips</a>
-                </li>
-            </ul>
-        </nav>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./mantenimiento.html">Mantenimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./puntosventa.html">Puntos de venta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eduacion.html">Educación</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                            <li><a class="dropdown-item" href="./cursos.html">Técnica tiffany</a></li>
+                            <li><a class="dropdown-item" href="./cursos.html">Armado con plantas</a></li>
+                        </ul>
+                    </li>
 
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="portada">
-            <div class="portada__contenedor">
-                <img class="portada__logo--pag" src="../imagenes/isocolor.png" alt="Logo Micromundo centrado y grande">
-                <h3 class="portada__titulo--pag">Productos</h3>
+        <section class="portada container-fluid d-flex flex-column align-items-center">
+            <div class="col-xl-6 d-flex flex-column align-items-center">
+                <img class="w-50 mt-5 portada__logo" src="../imagenes/isocolor.png"
+                    alt="Logo Micromundo centrado y grande">
             </div>
+            <h2 class="text-center text-white fs-1 mt-2" class="portada__titulo">Productos</h2>
         </section>
 
-        <h2 class="container__titulo">Terrarios</h2>
-        <ul class="productoscontenedor">
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Terrario Beijing</h3>
-                <img class="productos__img" src="../imagenes/terrarios/cerrado.jpg" alt="Terrario con forma de diamante vertical">
-                <p class="productos__texto">Terrario abierto <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
+        <div class="row">
+            <h2 class="seccionTitulo mt-0 fs-2">Terrarios</h2>
+        </div>
 
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Terrario Ámsterdam</h3>
-                <img class="productos__img" src="../imagenes/terrarios/amsterdam.jpg" alt="Terrario con forma de diamante">
-                <p class="productos__texto">Terrario abierto <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Terrario Roma</h3>
-                <img class="productos__img" src="../imagenes/terrarios/roma.jpg" alt="Terrario realizado con triángulos, simulando medio domo">
-                <p class="productos__texto">Terrario abierto <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Terrario Londres</h3>
-                <img class="productos__img" src="../imagenes/terrarios/londres.jpg" alt="Terrario de seis caras, con punta hexagonal plana">
-                <p class="productos__texto">Terrario abierto <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Terrario Berlín</h3>
-                <img class="productos__img" src="../imagenes/terrarios/berlin.jpg" alt="Terrario de forma hexagonal para colgar en paredes">
-                <p class="productos__texto">Terrario abierto <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>           
-            </li>
+        <div class="container-fluid d-xl-none">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-10">
+                    <div class="card p-0 m-0">
+                        <img src="../imagenes/terrarios/cerrado.jpg" class="card-img-top"
+                            alt="Terrario cerrado tropical con fitonias">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Terrario Beijing</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Cerrado</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </ul>
-        <h2 class="container__titulo">Lámparas de sal</h2>
-        <ul class="productoscontenedor">
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Lámpara París</h3>
-                <img class="productos__img" src="../imagenes/lamparas/paris.jpg" alt="Lámpara de sal, con estructura de vidrio">
-                <p class="productos__texto">Lámpara de sal <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Lámpara Nueva York</h3>
-                <img class="productos__img" src="../imagenes/lamparas/ny.jpg" alt="Lámpara de sal con forma de domo">
-                <p class="productos__texto">Lámpara de sal <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-            <li class="productostarjeta">
-                <h3 class="productos__titulo">Lámpara Rusia</h3>
-                <img class="productos__img" src="../imagenes/lamparas/rusia.jpg" alt="Lámpara de sal, con forma de cubo">
-                <p class="productos__texto">Lámpara de sal <br> Medidas:<br> Alto:<br>Largo:<br>Ancho:</p>
-                <a class="productos__boton--chico" href="">Comprar</a>
-            </li>
-        </ul>
-    </main>
+                <div class="col-10">
+                    <div class="card p-0 mt-2">
+                        <img src="../imagenes/terrarios/amsterdam.jpg" class="card-img-top"
+                            alt="Terrario con forma de diamante acostado">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Terrario Ámsterdam</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Abierto</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="footercontenedor">
-        <div class="footer__redes">
-            <div class="redes__tarjeta">
-                <img class="redes__img" src="../imagenes/iconos/instagram.png" alt="Instagram">
-                <a class="redes__link" href="https://www.instagram.com/micromundo.terrarios/?hl=es">.</a>
+                <div class="col-10">
+                    <div class="card p-0 mt-2">
+                        <img src="../imagenes/terrarios/londres.jpg" class="card-img-top"
+                            alt="Terrario de 6 lados con punta plana hexagonal">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Londres</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Abierto</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="card p-0 mt-2">
+                        <img src="../imagenes/terrarios/berlin.jpg" class="card-img-top"
+                            alt="Terrario de pared hexagonal">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Terrario Berlín</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Abierto</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="card p-0 mt-2">
+                        <img src="../imagenes/terrarios/roma.jpg" class="card-img-top"
+                            alt="Terrarrio medio domo abierto con suculentas">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Terrario Roma</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Abierto</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="card p-0 mt-2">
+                        <img src="../imagenes/terrarios/triangulo.jpg" class="card-img-top"
+                            alt="Terrario de pared de forma triangular para colgar">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Terrario Bermudas</h3>
+                            <p class="m-0"> <span class="font-weight">Terrario Abierto</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="redes__tarjeta">
-                <img class="redes__img" src="../imagenes/iconos/facebook.png" alt="Facebook">
-                <a class="redes__link" href="https://www.facebook.com/micromundoterrarios/">.</a>
+        </div>
+
+
+
+
+
+        <div class="d-flex flex-column align-items-center">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide h-50 w-75 d-none d-xl-block"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner ">
+
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../imagenes/terrarios/cerrado.jpg" class="d-block w-100"
+                            alt="terrario cerrado tropical">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Beijing</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imagenes/terrarios/amsterdam.jpg" class="d-block w-100"
+                            alt="terrario abierto con forma diamante acostado">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Ámsterdam</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../imagenes/terrarios/londres.jpg" class="d-block w-100"
+                            alt="terrario abierto con cactus y suculentas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Londres</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imagenes/terrarios/berlin.jpg" class="d-block w-100"
+                            alt="terrario de pared hexagonal">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Berlín</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imagenes/terrarios/roma.jpg" class="d-block w-100"
+                            alt="terrario abierto con suculentas">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Roma</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imagenes/terrarios/triangulo.jpg" class="d-block w-100"
+                            alt="Terrario de pared triangular">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Terrario Bermudas</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
-            <div class="redes__tarjeta">
-                <img class="redes__img" src="../imagenes/iconos/whatsapp.png" alt="Whatsapp">
-                <a class="redes__link"
-                    href="https://api.whatsapp.com/send?phone=%2B543434159473&fbclid=IwAR1vMk_6Ucux32oJPySvoIuBW9ODf62IOj0-qWuPOzmcFWHpSphDdueNObY">.
-            </div></a>
-        </div>
         </div>
 
-        <div>
-            <img class="footer__logo" src="../imagenes/logoblanco.png" alt="Logo Micromundo">
+        <div class="row">
+            <h2 class="seccionTitulo mt-3 fs-2">Lámparas de sal</h2>
         </div>
 
-        <div>
-            <span class="footer__texto">Decoración y reflexión...</span>
+        <div class="d-flex flex-column align-items-center">
+
+            <div id="carouselExampleCaptionsl" class="carousel slide h-50 w-75 d-none d-xl-block"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptionsl" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptionsl" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptionsl" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../imagenes/lamparas/paris.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lámpara de sal París</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagenes/lamparas/ny.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lámpara de sal New York</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imagenes/lamparas/rusia.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Lámpara de sal Rusia</h3>
+                            <button type="button" class="btn btn--productos p-2 text-black">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsl"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsl"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </div>
 
-    </footer>
+        <div class="container-fluid d-xl-none">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-10">
+                    <div class="card p-0 m-0">
+                        <img src="../imagenes/lamparas/paris.jpg" class="card-img-top"
+                            alt="Lámpara de sal, con técnica Tiffany">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Lámpara París</h3>
+                            <p class="m-0"> <span class="font-weight">Lámpara de sal</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="card p-0 m-0">
+                        <img src="../imagenes/lamparas/ny.jpg" class="card-img-top"
+                            alt="Lámpara de sal, con técnica Tiffany">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Lámpara New York</h3>
+                            <p class="m-0"> <span class="font-weight">Lámpara de sal</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="card p-0 m-0">
+                        <img src="../imagenes/lamparas/rusia.jpg" class="card-img-top"
+                            alt="Lámpara de sal, con técnica Tiffany">
+                        <div class="card-body">
+                            <h3 class="card-title text-center fs-5 bg-verde m-0">Lámpara Rusia</h3>
+                            <p class="m-0"> <span class="font-weight">Lámpara de sal</span> <br> Medidas <br>
+                                Alto: <br> Largo: <br> Ancho:</p>
+                            <div class="row justify-content-center">
+                                <button type="button" class="btn btn--productos">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid bg-verde mt-4 ">
+            <div class="row p-3 justify-content-between align-items-center">
+                <div class="d-flex flex-column align-items-center col-xl-3 align-items-xl-start">
+                    <img class="footer__logo w-25 mb-2" src="../imagenes/iso footer.png" alt="Logo Micromundo">
+                </div>
+                <div class="col-xl-3">
+                    <h3 class="text-center fs-6">Seguinos en nuestras redes</h3>
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.instagram.com/micromundo.terrarios/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/micromundoterrarios/"><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-google"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <p class="text-center text-muted border-top mt-2">Decoración y reflexión...</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

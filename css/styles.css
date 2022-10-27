@@ -18,17 +18,11 @@ a {
 /*---Header---*/
 
 .header {
-    background-color: rgb(0, 80, 35);
-    padding: 8px;
-    display: flex;
-    width: 100%;
-    height: 15%;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0px;
+
     z-index: 2;
-    position: sticky
+    position: absolute;
+    position: sticky;
+    top: 0px;
 }
 
 .header__titulo {
@@ -36,102 +30,61 @@ a {
     z-index: -1;
 }
 
-.header__img {
-    width: 180px;
-}
-
-.navbar__list {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    text-align: center;
-
-}
-
-.navbar__item {
+/* ---Navbar--- */
+.bg-verde{
+    background-color: rgb(0, 80, 35);
     color: white;
-    font-size: 100%;
-    justify-content: flex-end;
+}
+
+.dropdown-item{
+    background-color: rgba(0, 80, 35, 0.647);
+    color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    transform:rotate(5deg)
+}
+
+/* ---Portada--- */
+.portada {
+    background-image: url(../imagenes/portada.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.portada__logo:hover{
+    transform: scale(1.05);
+}
+
+/* Titulo secciones */
+.seccionTitulo{
+    background-color: rgb(0, 80, 35);
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.seccionTitulo:hover{
+    
+    color: white;
 }
 
 /* ---Main--- */
-.portada__contenedor {
-    display: flex;
-    flex-direction: column;
-}
 
-.portada {
-
-    background-image: url(../imagenes/portada.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-
-}
-
-.portada__logo {
-    width: 350px;
-    justify-content: center;
-    margin-left: 50px;
-}
-
-.portada__logo--pag {
-    width: 350px;
-}
-
-.portada__titulo {
-    text-align: center;
-    justify-content: center;
-    color: white;
-    font-size: 1, 3rem;
-}
-
-.portada__titulo--pag {
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    margin-top: 30px;
-}
-
-
-/* ---container card--- */
-
-.container__titulo {
-    text-align: center;
-    padding: 15px;
-    background-color: rgb(0, 80, 35);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.card {
-    border: 2px solid black;
-    width: 300px;
-    border-radius: 5%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding-bottom: 5px;
-}
-
-.card__img {
-    width: 100%;
-    height: 80%;
-}
-
+/* ---Primeras tarjetas--- */
 .card__titulo {
+    background-color: rgb(0, 80, 35);
     text-align: center;
-    background-color: rgba(0, 80, 35, 0.942);
-    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1px;
 }
 
 .card__texto {
@@ -139,193 +92,54 @@ a {
     text-align: center;
 }
 
-/* ---sección productos--- */
-.productos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(25, 153, 25, 0.201);
-
-}
-
-.productostarjeta {
-    border: 2px black solid;
-    border-radius: 10px;
+/* ---Tarjetas Adquirí--- */
+.btn--productos{
+    box-shadow: 5px 5px 8px rgb(0, 80, 35);
+    color: rgb(0, 80, 35);
+    border-bottom: 1px;
+    border-radius: 20px;
+    width: auto;
+    padding: 2.5%;
+    }
+    
+    .btn--productos:hover{
+        background-color: rgb(0, 80, 35);
+        color: white;
+        box-shadow: 5px 5px 5px black;
+    }
+    
+    .card{
+    box-shadow: 10px 10px 20px rgb(0, 80, 35);
+    border-radius: 10%;
     overflow: hidden;
-    width: 25vw;
-    margin: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
+    }
 
-.productos__img {
-    width: 100%;
-}
-
-.productos__titulo {
-    text-align: center;
-    font-weight: 700;
-    background-color: rgba(0, 80, 9, 0.598);
-}
-
-.productos__boton {
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 1.5px;
-    display: flex;
-    justify-content: center;
-}
-
-.productos__boton--chico{
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 1.5px;
-    display: flex;
-    color:rgba(0, 80, 35);
-    width: 70px;
-    align-self: center;
-}
-
+    .card:hover{
+        transform: scale(1.02);
+    }
 
 /* ---Medios de pago--- */
-.mediosdepago {
-    display: flex;
-    justify-content: center;
+.cardPago:hover{
+transform: rotate(10deg);
 }
 
-.mediosdepago__titulo {
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 15px;
-
-}
-
-.pagostarjeta {
-    border: 2px solid black;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.pagostarjeta:hover{
-transform: rotate(20deg);
-}
-
-.pagos__img {
-    width: 90px;
-    align-self: center;
-}
-
-.pagos__titulo {
-    text-align: center;
-}
-
-.pagos__texto {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/* ---sección noticias */
-.contenedor__titulo {
-    text-align: center;
+/* ---Noticias--- */
+.card-title{
     background-color: rgb(0, 80, 35);
-    margin: 15px;
-    padding: 15px;
-    width: 100%;
 }
 
-.contenedornoticias {
-    display: flex;
-    justify-content: space-between;
+/* ---footer--- */
+.containerFooter{
+    background-color: rgba(0, 80, 35, 0.803);
 }
 
-.noticiatarjeta {
-    border: 2px solid black;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-.noticia__img {
-    width: 100%;
-    height: 80%
-}
-
-.noticia__titulo {
-    text-align: center;
-}
-
-.noticia__boton {
-    display: flex;
-    justify-content: center;
-}
-
-/* ---Footer--- */
-
-.footercontenedor {
-    background-color: rgba(0, 80, 35);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5%;
-    padding: 20px;
-}
-
-.footer__redes {
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-}
-
-.redes__tarjeta {
-    border: 1px;
-    margin: 3px;
-    display: flex;
-    flex-direction: column;
-}
-
-.redes__img {
-    width: 35px;
-    margin-right: 20px;
-
-}
-
-/* En esta parte quería que los iconos me lleven directamente a las redes, así que me inventé esto, seguramente existan otra forma adecuada, esta es la que mi imaginación logró jajaj  */
-.redes__link {
-    position: absolute;
+.bi{
     color: white;
-    margin-left: 5px;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
-.footer__logo {
-    width: 200px;
-}
 
-.footer__texto {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 1.1rem;
-}
-
-/* Página productos */
-
-.productoscontenedor {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-/* Puntos de venta */
-.card__maps {
-    width: 100%;
-}
-
+/* SECCIONES SIN APLICAR BOOTSTRAP */
 /* ---Mantenimiento--- */
 
 .mantenimiento__texto {
@@ -339,6 +153,7 @@ transform: rotate(20deg);
 
 .texto__color {
     background-color: rgba(0, 80, 35);
+    color: white;
 }
 
 /* Cursos formulario */
@@ -366,8 +181,4 @@ transform: rotate(20deg);
     border-radius: 30px;
     overflow: hidden;
     margin-top: 30px;
-}
-
-.tarjvideos__video {
-    width: ;
 }

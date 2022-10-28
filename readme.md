@@ -1,2 +1,3 @@
-<h1>Bienvenidos a mi primer código</h1>
+<h1>Bienvenidos al código de mi emprendimiento</h1>
 
+<img>./imagenes/seccion productos/ caricatura-caja.jpg</img>

@@ -1,0 +1,16 @@
+.btn--productos {
+    box-shadow: 5px 5px 8px $color-marca;
+    color: $color-marca;
+    border-bottom: 1px;
+    border-radius: 20px;
+    width: auto;
+    padding: 2.5%;
+
+
+    &:hover {
+        background-color: $color-marca;
+        color: white;
+        box-shadow: 5px 5px 5px black;
+    }
+}
+

@@ -1,0 +1,33 @@
+.header {
+
+    z-index: 2;
+    position: absolute;
+    position: sticky;
+    top: 0px;
+
+
+    &__titulo {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+/* ---Navbar--- */
+.bg-verde{
+    background-color: $color-marca;
+    color: white;
+}
+
+.dropdown-item{
+    background-color: rgba(0, 80, 35, 0.831);
+    color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    transform:rotate(5deg)
+}

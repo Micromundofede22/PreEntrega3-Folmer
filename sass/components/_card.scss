@@ -1,0 +1,31 @@
+// Primeras tarjetas 
+.card {
+    &__titulo {
+        background-color: $color-marca;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1px;
+    }
+
+    &__texto {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+// card
+
+.card {
+    box-shadow: 10px 10px 20px $color-marca;
+    border-radius: 10%;
+    overflow: hidden;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+// cardpago
+.cardPago:hover {
+    transform: rotate(10deg);
+  }

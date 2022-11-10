@@ -1,0 +1,10 @@
+.portada {
+    background-image: url(../imagenes/portada.jpg);
+    background-size: cover;
+    height: 100%;
+
+
+    &__logo:hover {
+        transform: scale(1.05);
+    }
+}

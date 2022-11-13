@@ -1,5 +1,4 @@
 .mantenimiento__texto {
-    // box-shadow: 5px 5px 5px;
     margin-top: 10px;
 }
 
@@ -8,7 +7,20 @@
     color: white;
 }
 
-.mantenimiento__img:hover{
-    transform: scale(1.1);
+.mantenimiento__img {
+
+    box-shadow: 10px 5px 5px rgb(87, 84, 84);
+    border-radius: 20px;
+}
+
+.mantenimiento__img:hover {
     opacity: 0.9;
+
+
+}
+
+.bg-mantenimiento {
+    background-color: rgba(225, 222, 222, 0.408);
+    border-left: 6px solid $color-marca;
+
 }

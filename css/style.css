@@ -292,7 +292,7 @@ a {
 }
 
 .bodyindex {
-  background-image: url("/imagenes/fondoindex.jpg");
+  background-image: url("../imagenes/fondoindex.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -308,7 +308,7 @@ a {
 }
 
 .bodyfondo {
-  background-image: url("/imagenes/mantenimiento/fondo-hojas.jpg");
+  background-image: url("../imagenes/mantenimiento/fondo-hojas.jpg");
   background-size: contain;
   background-attachment: fixed;
 }
@@ -348,13 +348,13 @@ a {
 }
 
 .bodyventa {
-  background-image: url("/imagenes/fondo-hoja.jpg");
+  background-image: url("../imagenes/fondo-hoja.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
 .bodycursos {
-  background-image: url("/imagenes/fondocursos.jpg");
+  background-image: url("../imagenes/fondocursos.jpg");
   background-size: cover;
   background-attachment: fixed;
 }

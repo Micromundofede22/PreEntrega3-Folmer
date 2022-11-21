@@ -292,7 +292,7 @@ a {
 }
 
 .bodyindex {
-  background-image: url(/imagenes/fondoindex.jpg);
+  background-image: url(./imagenes/fondoindex.jpg);
   background-size: cover;
   background-attachment: fixed;
 }

@@ -9,7 +9,7 @@
     }
 
     &__texto {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: center;
     }
 }
@@ -20,6 +20,7 @@
     box-shadow: 10px 10px 20px $color-marca;
     border-radius: 10%;
     overflow: hidden;
+    
 
     &:hover {
         transform: scale(1.02);

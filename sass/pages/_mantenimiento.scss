@@ -1,26 +1,29 @@
+.bodyfondo{
+    background-image: url(/imagenes/mantenimiento/fondo-hojas.jpg);
+    background-size:contain;
+    background-attachment:fixed;
+    
+}
+
 .mantenimiento__texto {
     margin-top: 10px;
 }
 
-.texto__color {
-    background-color: $color-marca;
-    color: white;
-}
 
 .mantenimiento__img {
-
+width: 100%;
     box-shadow: 10px 5px 5px rgb(87, 84, 84);
     border-radius: 20px;
 }
 
 .mantenimiento__img:hover {
-    opacity: 0.9;
-
-
+   transform: scale(1.05);
 }
+
+
+
 
 .bg-mantenimiento {
     background-color: rgba(225, 222, 222, 0.408);
     border-left: 6px solid $color-marca;
-
 }

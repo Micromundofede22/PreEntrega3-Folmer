@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body class="bodycursos">
     <h1 class="header__titulo">Cursos. Técnica tiffany. Armado de terrarios</h1>
 
     <header class="navbar sticky-top navbar-expand-lg navbar-light bg-verde ">
@@ -67,12 +67,12 @@
                 <img class="w-50 mt-5 portada__logo" src="../imagenes/isocolor.png"
                     alt="Logo Micromundo centrado y grande">
             </div>
-            <h2 class="text-center text-white fs-3 mt-2" class="portada__titulo">Cursos</h2>
+            <h2 class="text-center text-white fs-1 fw-bold mt-2" class="portada__titulo">CURSOS</h2>
         </section>
 
-        <div class="container mt-3">
+        <section class="container mt-3">
             <div class="row justify-content-center">
-                <div class="col-sm-5">
+                <article class="col-sm-5">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column align-items-center">
                             <h3 class="card__titulo text-center text-white">Técnica Tiffany</h3>
@@ -87,8 +87,8 @@
                             <a href="#" class="btn btn--productos">Inscribirme</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-5 mt-2">
+                </article>
+                <article class="col-sm-5 mt-2">
                     <div class="card h-100">
                         <div class="card-body d-flex flex-column align-items-center">
                             <h3 class="card__titulo text-center text-white">Armado de terrarios abiertos</h3>
@@ -101,81 +101,87 @@
                             <a href="#" class="btn btn--productos mt-3">Inscribirme</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
 
 
 
         <div class="container-fluid">
             <div class="row">
-              <h2 class="seccionTitulo">Formulario de inscripción</h2>
+                <h2 class="seccionTitulo">Formulario de inscripción</h2>
             </div>
-          </div>
+        </div>
 
-          <div class="container">
-        <form class="row g-3 needs-validation form" novalidate>
-            <div class="col-md-4">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text"  name="nombre" class="form-control border-success" id="nombre" placeholder="Nombre" required>
-                <div class="valid-feedback">
-                    ¡Se ve bien!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text"name="apellido" class="form-control border-success" id="apellido" placeholder="Apellido" required>
-                <div class="valid-feedback">
-                    ¡Se ve bien!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-        
-            </div>
-            <div class="col-md-4">
-                <label for="form-ciudad" class="form-label">Ciudad</label>
-                <input type="text" class="form-control border-success" id="form-ciudad" required>
-                <div class="invalid-feedback">
-                    Proporciona una ciudad válida.
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="curso">Curso de interés</label>
-                <select name="curso" id="curso" class="border-success">
-                    <option value="tiffany">Técnica Tiffany</option>
-                    <option value="armadoplantas">Armado de plantas</option>
-                </select>
-                <div class="invalid-feedback">
-                    Selecciona un estado válido.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label class="form-label">Mensaje</label>
-                <div class="form-floating">
-                    
-                    <textarea class="form-control border-success" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comentarios</label>
-                  </div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input border-success" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Desea recibir notificaciones?
-                    </label>
-                    <div class="invalid-feedback">
-                        Debe estar de acuerdo antes de enviar.
+        <div class="container bg-secondary bg-opacity-25">
+            <form class="row g-3 needs-validation form" novalidate>
+                <div class="col-md-4">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control border-success" id="nombre"
+                        placeholder="Nombre" required>
+                    <div class="valid-feedback">
+
                     </div>
                 </div>
-            </div>
-            <div class="col-12 d-flex justify-content-lg-center ">
-                <button class="btn btn--productos p-2 mb-3" type="submit">Enviar</button>
+                <div class="col-md-4">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="apellido" class="form-control border-success" id="apellido"
+                        placeholder="Apellido" required>
+                    <div class="valid-feedback">
 
-            </div>
-        </form>
-    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control border-success" id="exampleFormControlInput1"
+                        placeholder="nombre@ejemplo.com">
+
+                </div>
+                <div class="col-md-4">
+                    <label for="form-ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control border-success" id="form-ciudad" required>
+                    <div class="invalid-feedback">
+                        Proporciona una ciudad válida.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="curso">Curso de interés</label>
+                    <select name="curso" id="curso" class="border-success">
+                        <option value="tiffany">Técnica Tiffany</option>
+                        <option value="armadoplantas">Armado de plantas</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Selecciona un estado válido.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Mensaje</label>
+                    <div class="form-floating">
+
+                        <textarea class="form-control border-success" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentarios</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input border-success" type="checkbox" value="" id="invalidCheck"
+                            required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Desea recibir notificaciones?
+                        </label>
+                        <div class="invalid-feedback">
+                            Debe estar de acuerdo antes de enviar.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-lg-center ">
+                    <button class="btn btn--productos p-2 mb-3" type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </div>
 
     </main>
 

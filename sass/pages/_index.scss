@@ -1,0 +1,17 @@
+.bodyindex{
+    background-image: url(/imagenes/fondoindex.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+
+.bg-subtitulos{
+    background-color:rgba(34, 139, 34, 0.287);
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.bg-subtitulos:hover{
+    transform: scale(1.1);
+    // background-attachment: fixed;
+}

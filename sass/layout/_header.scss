@@ -19,15 +19,18 @@
 }
 
 .dropdown-item{
-    background-color: rgba(0, 80, 35, 0.831);
+    background-color: rgb(0, 80, 35);
     color: white;
 }
 
 
 .navbar-light .navbar-nav .nav-link{
     color: rgba(255, 255, 255, 0.92);
+    font-size: large;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    transform:rotate(5deg)
+    transform:scale(1.05);
+    color: honeydew;
+    text-shadow: 2px 2px 6px black;
 }
